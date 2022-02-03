@@ -34,3 +34,7 @@
 - deque
   - 리스트가 아닌 deque로 자료형 선언 후 동일한 코드 작성
   - deque의 popleft는 O(1)이므로 총 O(n)
+
+- slicing
+  - 정규식으로 문자 필터링
+  - slicing으로 문자열을 뒤집어 원래 문자열과 같은지 체크

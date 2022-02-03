@@ -1,6 +1,6 @@
 import collections
 from typing import Deque
-
+import re
 
 def is_palindrome_list(self, s: str) -> bool:
     # 리스트로 해결하는 방법
@@ -30,3 +30,11 @@ def is_palindrome_deque(self, s: str) -> bool:
             return False
 
     return True
+
+
+def is_palindrome_slicing(self, s: str) -> bool:
+    s = s.lower()
+    # 정규식으로 필요 문자 필터링
+    s = re.sub('[^a-z0-9]', '', s)
+
+    return s == s[::-1]
